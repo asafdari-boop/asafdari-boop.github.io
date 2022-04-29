@@ -354,7 +354,42 @@
     <!-- Projects section -->
     <section id="projects">
       <h2>Projects</h2>
+      <br>
       <div class="ui items">
+        <div class="item">
+          <div class="ui small image">
+            <img src="/assets/images/FS.png">
+          </div>
+
+          <div class="content">
+            <div class="header"> Network File Server </div>
+            <div class="description">
+              <p> Created a multithreaded client-server file server to process requests to modify a filesystem. Used fine-grained, hand-over-hand reader/writer locks to protect
+                files and directories from concurrent acccess issues. Used the traditional inode and direntries data structures to make the filesystem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
+        <div class="item">
+          <div class="ui small image">
+            <img src="/assets/images/vm.png">
+          </div>
+
+          <div class="content">
+            <div class="header"> Virtual Memory Pager </div>
+            <div class="description">
+              <p> Created a virtual memory pager to provide the abstraction of separate, protected adress spaces for multiple processes. Our implementation
+                supported shared, file backed pages as well as swap back pages that are specific to a process. For physical memory eviction and page replacement we used the clock
+                algorithm as an approximation for LRU.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+
         <div class="item">
           <div class="ui small image" style="display:block">
             <img src="/assets/images/threads.png">
@@ -363,7 +398,7 @@
           <div class="content">
             <div class="header"> C++ Threading Library </div>
             <div class="description">
-              <p> Programmed a C++ threading library that supports join, yeild, mutextes, condition variables, and multithreaded program execution on
+              <p> Programmed a C++ threading library that supports join, yeild, mutexes, condition variables, and multithreaded program execution on
                 multicore processors. This library makes use of inter processor interrupts and timer interrupts as well as guards
                 to ensure the OS can swap threads during user function execution and ensure kernel level atomicity across CPUs.
               </p>
