@@ -75,11 +75,11 @@
       <p>
         <img class="ui left floated rounded small image" alt="Ammar Safdari headshot" src="./assets/images/headshot2.jpeg">
 
-        I am currenly a student at the University of Michigan Ann Arbor, majoring in Computer Science and
-         Interdisciplinary Physics. My academic interests reside in Web Systems, Machine Learning, AI, batteries, superconducting materials,
-         and renewable energy technologies. I currently work as an employee of Sandia National Labs,
-         helping with the open source software development of a battery initiative called <a href="https://www.batteryarchive.org/"> BatteryArchive.org  </a>,
-         which is described in greater detail below. In my free time I love to read fiction novels and play chess.
+        I am currenly a senior at the University of Michigan Ann Arbor, majoring in Computer Science and
+         Interdisciplinary Physics. I'm recruiting for full time offers in the areas of AI, blockchain, web systems, and renewable energy technologies.
+         I have work experience as a full stack developer, AI intern, and freelance software developer. As for my blockchain experience,
+         I'm in the process of learning about blockchain technologies from textbooks, coding projects, and <a href="https://www.michiganblockchain.org/"> Blockchain at Michigan </a>.
+        In my free time I love to read fiction novels and play chess.
         If you'd like to get in touch to work on coding projects or even just to discuss book recs or play chess online please reach out!
 
       </p>
@@ -189,8 +189,9 @@
                   for standardized battery data. The point of BA is to provide a platform for easy analysis, visualization, and comparison of batteries across multiple insitutions. From working on BA, I have
                   gained experience using front end and backend frameworks as well as containerization techniques (react.js, node.js, postgresql, and docker). I also have
                   made extensive use of Python to develop data upload and download scripts using google cloud APIs for the industrial sized battery test datasets that
-                  BatterArchive needs to process. As part of my job, I've also learned how to create services using the likes of Cron or systemctl that run
-                  on google cloud virtual machines. Through my work, I hope to ease the developement and testing process for batteries as we work towards cost effective batteries
+                  BatterArchive needs to process. As part of my job, I've learned how to create services using the likes of Cron or systemctl that run
+                  on google cloud virtual machines to automactically deal with incoming datasets. For those very same datasets, I created scripts to parse different data formats into a common schema that is digestible by our
+                  database. Through my work, I hope to ease the developement and testing process for batteries as we work towards cost effective batteries
                   that can support grid scale storage.
                 </p>
             </div>
@@ -239,12 +240,13 @@
           </div>
           <div class="content" style="flex-grow: 0;">
             <div class="description">
-              <p> At Vianai, I worked as a software intern, recieving mentorship from the head of prototyping, <a  href="https://www.kevindunnell.com/"> Kevin Dunnel</a>. Under his guidance,
-                I learned about and built sophisticated models with decision trees, Support Vector Machines, Recurrent Neural Nets, Convolutional Neural Nets, and Generative Adversarial Networks
-                During my time at Vianai, I also got the chance to work on creating a song recommendation backend service for an online marketplace connecting producers and artists using the deep learning techniques
-                and skills I developed. Linked below is the open source code I wrote to assemble a song database to train and test my model for different artists. In addition, while working part time over the school year,
-                I got to do research on marketaplce applications for newly emerging physics guided neural nets frameworks
-                as well as work on a hierchical stop sign model that outperformed state of the art stop sign detectors. </p>
+              <p>
+                I've worked as a software intern at Vianai two summers, once my freshman year and another my junior year. The first time around, I recieved a lot of mentorship from the head of prototyping, <a  href="https://www.kevindunnell.com/"> Kevin Dunnel</a>.
+                Kevin guided me through the process of learning about and building sophisticated models with decision trees, Support Vector Machines,
+                Recurrent Neural Nets, Convolutional Neural Nets, and Generative Adversarial Networks. After my training, I got the chance to work on creating a song recommendation backend service for an online marketplace connecting producers and artists using the deep learning techniques
+                and the skills I had developed. Linked below is the open source code I wrote to assemble a song database to train and test my model for different artists. My second time around, another summer, I got to work
+                on platform dev for Vianai's MLOPS platform, building webapps with React, backend classes in our custom AI library, SQL transformers for data preprocessing, and  investigating/evaluating emerging techniques in the field of AI for potential integration into our suite of services.
+             </p>
             </div>
             <br>
             <div class="ui tiny images">
@@ -359,6 +361,44 @@
       <h2>Projects</h2>
       <br>
       <div class="ui items">
+
+
+        <div class="item">
+          <div class="ui small image">
+            <img src="/assets/images/xss.webp">
+          </div>
+
+          <div class="content" >
+            <div class="header"> SQL Injection, XSS, and CSRF Attacks </div>
+            <div class="description">
+              <p>
+                Implemented various sql injection attacks on a mock server, logging in as a user without their password by taking advantage of unsanitized inputs to insert malicious SQL code.
+                Also devised cross site scripting attacks to steal a fake users browsing info with javascript as well as cross site forgery attacks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="item">
+          <div class="ui small image">
+            <img src="/assets/images/lock.png">
+          </div>
+
+          <div class="content">
+            <div class="header"> MD5 Length Extension and Padding Oracle Attacks </div>
+            <div class="description">
+              <p>
+                Implemented a length extension attack on MD5 which allows an attacker to append to a mesage and compute its verifier, which will then be accepted as valid by the intended
+                recipient. Also implemented a padding oracle attack on sha256, which allows an attacker to decode an entire message by exploiting a vulnerability in returning both a padding and invalid MAC error.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
         <div class="item">
           <div class="ui small image">
             <img src="/assets/images/FS.png">
@@ -688,10 +728,10 @@
         <a class="ui fluid card" href="https://dijkstra.eecs.umich.edu/kleach/eecs484/f20/" target="_blank">
           <div class="content">
             <div class="header">
-              EECS 484: Databases
+              EECS 484: Intro to Databases
             </div>
             <div class="description">
-              SQL, relational algebra, query excecution, optimization, and ACID semantics
+              SQL, MongoDB, JDBC, relational algebra, query excecution, query compiler algorithms (grace hash join ect.), query optimization, and ACID semantics
             </div>
             <div class="floating ui icon label">
               <i class="icon linkify"></i>
@@ -702,11 +742,67 @@
         <a class="ui fluid card" target="_blank">
           <div class="content">
             <div class="header">
-              STATS 412: Intro to Statistics
+              STATS 412: Intro to Probabilty and Statistics
             </div>
             <div class="description">
-              statistical models, sampling models, estimation and confidence intervals, hypotheses testing
+              Probability, statistical models, sampling models, estimation and confidence intervals, hypotheses testing, and linear regression
             </div>
+          </div>
+        </a><!-- /fluid card -->
+
+        <a class="ui fluid card" href="https://eecs388.org/" target="_blank">
+          <div class="content">
+            <div class="header">
+              EECS 388: Intro to Computer Security
+            </div>
+            <div class="description">
+              Topics include standard cryptographic functions and protocols, threats and defenses for real-world systems, incident response, and computer forensics
+            </div>
+            <div class="floating ui icon label">
+              <i class="icon linkify"></i>
+            </div>
+          </div>
+        </a><!-- /fluid card -->
+
+        <a class="ui fluid card" href="https://eecs445-f16.github.io/" target="_blank">
+          <div class="content">
+            <div class="header">
+              EECS 445: Introduction to Machine Learning
+            </div>
+            <div class="description">
+              Intro to the foundations of machine learning topics including regression, classification, kernel methods, regularization, neural networks, graphical models, and unsupervised learning.
+            </div>
+            <div class="floating ui icon label">
+              <i class="icon linkify"></i>
+            </div>
+          </div>
+        </a><!-- /fluid card -->
+
+        <a class="ui fluid card" href="" target="_blank">
+          <div class="content">
+            <div class="header">
+              FIN 302: Making Financial Decisions
+            </div>
+            <div class="description">
+              Understand the relationship between risk and return when investing as well as gain a general understanding of financial markets. Notable topics include valuing stocks and bonds, accounting, and capital budgeting.
+            </div>
+          </div>
+          <div class="floating ui icon label">
+            <i class="icon linkify"></i>
+          </div>
+        </a><!-- /fluid card -->
+
+        <a class="ui fluid card" target="_blank">
+          <div class="content">
+            <div class="header">
+              PHYS 411: Computational Physics
+            </div>
+            <div class="description">
+              Develop computer software to solve problems in quantum mechanics, atomic physics, astrophysics, condensed matter, nonlinear dynamics and chaos, biophysics, and other areas.
+            </div>
+          </div>
+          <div class="floating ui icon label">
+            <i class="icon linkify"></i>
           </div>
         </a><!-- /fluid card -->
 
