@@ -40,6 +40,15 @@
 
   <!-- Main page  -->
   <div class="ui text container">
+      <a
+      class="ui right floated icon button"
+      data-tooltip="Twitter"
+      data-position="bottom right"
+      href="https://twitter.com/asapdar"
+      target="_blank"
+    >
+    <i class="ui icon twitter"></i>
+  </a>
 
     <a
       class="ui right floated icon button"
@@ -68,7 +77,8 @@
     >
       <i class="ui icon envelope"></i>
     </a>
-    <header>
+
+    <header style="margin-top: 20px;">
       <h1>Ammar Safdari</h1>
 
       <br>
@@ -76,7 +86,7 @@
         <img class="ui left floated rounded small image" alt="Ammar Safdari headshot" src="./assets/images/grad.png">
 
         I just finished up my degree at the University of Michigan Ann Arbor, majoring in Computer Science and
-        Interdisciplinary Physics. Good time. If you're reading this and deciding on colleges (I don't know why that would be the case), Go Blue or go home as we like to say. My interests are
+        Interdisciplinary Physics. Good time. If you're reading this and deciding on colleges (I don't know why that would be the case), Go Blue or go home. My interests are
         a bit all over the place, but the primary ones are AI, clean energy tech, and blockchain as a tool for financial inclusivity.
         I have work experience as a full stack developer, AI intern, freelance software developer, and newsletter writer. If you'd like to get in touch to work on projects, happy to meet!
 
@@ -99,6 +109,95 @@
     <section id="work">
       <h2>Work Experience</h2>
       <div class="ui two stackable cards">
+
+        <div class="ui fluid card">
+          <div class="content">
+            <img class="right floated rounded mini ui image" src="assets/images/logo-circle.png" alt="Claros logo">
+            <h3 class="header">
+              Claros
+            </h3>
+            <div class="meta">
+              <p>CTO <a href="https://claros.so/" target="_blank">@ Claros </a></p>
+            </div>
+          </div>
+          <div class="content" style="flex-grow: 0;">
+            <div class="description">
+              <p>
+                Working on Claros, an AI personal shopping assistant with my co-founder <a  href="https://twitter.com/thiteanish/"> Anish Thite </a>.
+                Why are in-person, brick and mortar conversion rates so much higher than that of e-commerce? A regular e-commerce conversion rate site between 2-4%, whereas typical
+                store conversion rates are closer to 20-40%. We believe that one of the most important reasons for this disconnect is the absence of a shopping assistant. All retail stores
+                have employees manning the floor, ready and able to assist with questions and provide recommendations to customers.
+
+                Claros aims to replicate this level of personalized service digitally, leveraging the power of Large Language Models (LLMs) to provide scalable, on-demand shopping assistance.
+                Claros also has the ability to actually perform research online before recommending products. It puts in the work of going through sites like Reddit and Wirecutter in search of
+                trustworthy, crowdsourced information. Think of this as expediting the due diligence a customer goes through before clicking buy and thereby
+                reducing the inevitable indecision that comes with buying products online.
+
+             </p>
+            </div>
+            <br>
+            <div class="ui tiny images">
+              <div class="ui image" data-tooltip="Python"> <img  src="assets/images/pyth.png" alt="Python"></div>
+              <div class="ui image" data-tooltip="AWS ECS"> <img  src="assets/images/awsecs.png" alt="AWS ECS"></div>
+              <div class="ui image" data-tooltip="Typescript"> <img  src="assets/images/typescript.png" alt="Typescript"></div>
+            </div>
+
+          </div>
+
+          <div class="extra content" style="flex-grow: 0;">
+              <a class="ui label"  href="https://getproduct.help/" target="_blank">
+                <i class="file icon"></i>
+                getproduct.help
+              </a>
+          </div>
+        </div><!-- /fluid card -->
+
+        <div class="ui fluid card">
+          <div class="content" style="flex-grow: 0;">
+            <img class="right floated rounded mini ui image" src="assets/images/logonewsletter.png" alt="SNL image">
+            <h3 class="header">
+              Newsletter Writer
+            </h3>
+            <div class="meta">
+              <p>Writer for <a class="item" href="https://chatgptnewsletter.com" target="_blank">The Week in GenAI</a></p>
+            </div>
+            <a class="right aligned floating ui primary label" href="https://gen-ai-newsletter.beehiiv.com/" target="_blank">
+              Subscribe!
+            </a>
+          </div>
+          <div class="content">
+            <div class="description">
+              <p>
+                At the start of 2023, I began writing a newsletter as the generative AI craze was entering the mainstream, led by its poster child ChatGPT. There was so much AI news every day, so I used this newsletter as an opportunity to condense my weekly learnings and discoveries into a 1.5K word weekly newsletter.
+                Over the months, I grew the newsletter to around 2K readers, with a 37% open rate and 10% CTR. It was fun to create written content on a fast-growing space and there was no shortage of things to write about. I particularly liked reviewing AI apps and products and releasing a shortlist of the coolest tools I had
+                found that week. In the process of going through hundreds of AI demos, I discovered some early on tools that would only increase in popularity, like Tome, the generative AI presentation deck company. It felt like I was almost on the bleeding edge of something and that was a pretty cool feeling, but I wasn't doing much development, which
+                nagged at me being a CS major and all. So after graduating from Umich, I decided to hang up the proverbial pen and go all-in on dev for a while and that's when I found Claros!
+                </p>
+            </div>
+            <br>
+            <div class="ui tiny images">
+              <div class="ui image" data-tooltip="Twitter">
+              <img  src="assets/images/twitter.png"   alt="twitter logo">
+              </div>
+              <div class="ui image" data-tooltip="Linkedin">
+                <img  src="assets/images/linkedin.png"   alt="Linkedin logo">
+                </div>
+              <div class="ui image" data-tooltip="beehiiv">
+                <img  src="assets/images/beehiiv.png"   alt="beehiiv logo">
+                </div>
+
+            </div>
+          </div>
+
+          <div class="extra content">
+            <a class="ui label" href="https://chatgptnewsletter.com/" target="_blank">
+              <i class="file icon"></i>
+              Landing Page
+            </a>
+
+          </div>
+        </div><!-- /fluid card -->
+
 
         <div class="ui fluid card">
           <div class="content">
@@ -135,7 +234,7 @@
           <div class="extra content" style="flex-grow: 0;">
               <a class="ui label" data-tooltip="Song Database Assembler Github" href="https://github.com/asafdari-boop/Song-Database-Assembler" target="_blank">
                 <i class="file icon"></i>
-                Song Database Assembler
+                Github
               </a>
           </div>
         </div><!-- /fluid card -->
@@ -1120,21 +1219,19 @@
     <div class="ui hidden section divider"></div>
   </div><!-- /text container -->
 
-
   <!-- Footer with contact information -->
   <footer class="ui inverted vertical footer segment">
     <section class="ui center aligned container" id="contact">
-      <div class="ui stackable inverted divided grid">
-        <div class="two wide column"></div>
-        <div class="four wide column center aligned">
+      <div class="ui stackable inverted divided equal width grid">
+        <div class="column center aligned">
           <div class="ui inverted link list">
-            <div class="item">
+            <a class="item" href="mailto:asafdari@umich.edu">
               <i class="mail icon"></i>
               asafdari@umich.edu
-            </div>
+            </a>
           </div>
         </div><!-- /column -->
-        <div class="four wide column center aligned">
+        <div class="column center aligned">
           <div class="ui inverted link list">
             <a class="item" href="https://github.com/asafdari-boop/" target="_blank">
               <i class="github icon"></i>
@@ -1142,17 +1239,22 @@
             </a>
           </div>
         </div><!-- /column -->
-        <div class="four wide column center aligned">
+        <div class="column center aligned">
           <div class="ui inverted link list">
-            <div class="item">
-              <a class="item" href="https://www.linkedin.com/in/ammar-safdari-b4b77819b/" target="_blank">
-                <i class="ui icon linkedin"></i>
-                LinkedIN
-              </a>
-            </div>
+            <a class="item" href="https://www.linkedin.com/in/ammar-safdari-b4b77819b/" target="_blank">
+              <i class="linkedin icon"></i>
+              LinkedIn
+            </a>
           </div>
         </div><!-- /column -->
-        <div class="two wide column"></div>
+        <div class="column center aligned">
+          <div class="ui inverted link list">
+            <a class="item" href="https://twitter.com/asapdar" target="_blank">
+              <i class="twitter icon"></i>
+              Twitter
+            </a>
+          </div>
+        </div><!-- /column -->
       </div>
       <div class="ui inverted section divider"></div>
       <div class="ui horizontal inverted small divided link list">
