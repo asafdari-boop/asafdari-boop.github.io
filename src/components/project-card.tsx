@@ -13,7 +13,7 @@ import Markdown from "react-markdown";
 
 interface Props {
   title: string;
-  href?: string;
+  href: string;
   description: string;
   dates: string;
   tags: readonly string[];

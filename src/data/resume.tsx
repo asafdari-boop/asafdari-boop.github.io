@@ -85,7 +85,7 @@ export const DATA = {
     {
       company: "Claros",
       href: "https://claros.so/",
-      // badges: ["Python", "AWS ECS", "Typescript"],
+      badges: [],
       location: "Remote",
       title: "Co-Founder & CEO",
       logoUrl: "/logo-circle.png",
@@ -97,7 +97,7 @@ export const DATA = {
     {
       company: "Newsletter Writer",
       href: "https://chatgptnewsletter.com",
-      // badges: ["Twitter", "Linkedin", "beehiiv"],
+      badges: [],
       location: "Remote",
       title: "Writer",
       logoUrl: "/logonewsletter.png",
@@ -109,7 +109,7 @@ export const DATA = {
     {
       company: "Vianai",
       href: "https://www.vian.ai/",
-      // badges: ["Python", "Neural Nets", "Decision Trees", "SVMs", "GANs"],
+      badges: [],
       location: "Remote",
       title: "Software Intern",
       logoUrl: "/vianaiclose.png",
@@ -121,7 +121,7 @@ export const DATA = {
     {
       company: "Mach",
       href: "http://machtours.com/",
-      // badges: ["React Native", "Google Firestore"],
+      badges: [],
       location: "Remote",
       title: "COO and Co-Founder",
       logoUrl: "/mach.png",
@@ -133,7 +133,7 @@ export const DATA = {
     {
       company: "Lookout",
       href: "https://lookout.finance",
-      // badges: ["React", "CSS", "HTML"],
+      badges: [],
       location: "Remote",
       title: "Front End Developer",
       logoUrl: "/lookout.png",
@@ -145,7 +145,7 @@ export const DATA = {
     {
       company: "Sandia National Labs",
       href: "https://www.sandia.gov/",
-      // badges: ["GCP", "Docker", "Postgres", "React", "Python"],
+      badges: [],
       location: "Remote",
       title: "Software Developer",
       logoUrl: "/sandia.jpeg",
@@ -157,7 +157,7 @@ export const DATA = {
     {
       company: "Done Waiting",
       href: "https://donewaiting.org",
-      // badges: ["Wix", "Flask", "Firebase"],
+      badges: [],
       location: "Remote",
       title: "Web Developer",
       logoUrl: "/dw.jpg",
@@ -190,6 +190,7 @@ export const DATA = {
       title: "Speakupforpalestine.com",
       href: "https://speakupforpalestine.com",
       active: true,
+      dates: "",
       description:
         "Created a website to make it easy for people to contact their reps (local, state, and national) to voice their discontent with the way the U.S. is handling the Israel-Palestine conflict. It gives pre-filled message templates and various means to contact each rep across their different platforms. So far a couple thousand people have used it to contact their reps and send some sort of message, but the goal is to provide recurring utility to users beyond simply providing quick contact information. This project is supported by the Tech For Palestine Incubator.",
       technologies: ["React", "Google APIs"],
@@ -202,14 +203,17 @@ export const DATA = {
         {
           type: "Tech For Palestine",
           href: "https://techforpalestine.org/",
+          icon: null,
         },
       ],
       image: "/palestine.svg",
+      video: ""
     },
     {
       title: "Forta Sybil Bot",
       href: "https://app.forta.network/bot/0xba84cbb78b118afdb4db767582d76eb3f7e0ad0186edc91dffa761ce13d993c4/health",
       active: true,
+      dates: "",
       description:
         "Sybil attacks use a single network node to operate many fake identities, often simultaneously, within a Peer-to-Peer (P2P) network. A sybil attack leads to a small number of network actors gaining an undue share of influence, which in the context of an airdrop, means a larger share of governance tokens. However, intelligent analysis of transaction history can reveal the wallet addresses behind these attacks and raise alerts when they have occurred. I wrote a program for the Forta network to detect and flage these sybil attacks across blockchains.",
       technologies: ["Python", "Docker"],
@@ -226,11 +230,13 @@ export const DATA = {
         },
       ],
       image: "/forta.png",
+      video: ""
     },
     {
       title: "Delineate",
       href: "https://github.com/asafdari-boop/Delineate",
       active: true,
+      dates: "",
       description:
         "Created a webapp that explains smart contracts and scans them for vulnerabilities using LLMs. Tested it on a suite of contract vulnerabilities, where it managed to catch over 90% of the bugs (which had led to multi-million dollar breaches in prior months).",
       technologies: ["python", "javascript", "openai"],
@@ -242,10 +248,13 @@ export const DATA = {
         },
       ],
       image: "/smartcontract.jpeg",
+      video: ""
     },
     {
       title: "Crypto/Stock Trading Tools",
+      href:"https://github.com/asafdari-boop/Stock-Portfolio-CSV-Simulator",
       active: true,
+      dates: "",
       description:
         "Built a simple script to access my Coinbase account and provide advanced statistics on my portfolio performance, like CoinTracker without the UI. Also built a terminal tool to simulate different portfolio performances and track it all through terminal.",
       technologies: ["python", "bash"],
@@ -262,6 +271,7 @@ export const DATA = {
         },
       ],
       image: "/coinbase.png",
+      video: ""
     }
   ],
   school_projects: [
@@ -269,6 +279,7 @@ export const DATA = {
       title: "Bot Banishers",
       href: "https://github.com/asafdari-boop/EECS448BotBanishers",
       active: true,
+      dates: "",
       description:
         "Created an AI text detector trained off of thousands of pairwise human and AI-generated Wikipedia article intros. Tested a variety of models including neural nets, LSTMs, and an XGBoost tree.",
       technologies: ["Python", "TensorFlow", "XGBoost"],
@@ -280,148 +291,177 @@ export const DATA = {
         },
       ],
       image: "/banisher.jpeg",
+      video: ""
     },
     {
       title: "Network File Server",
       href: "",
       active: true,
+      dates: "",
       description:
         "Created a multithreaded client-server file server to process requests to modify a filesystem. Used fine-grained, hand-over-hand reader/writer locks to protect files and directories from concurrent access issues. Used the traditional inode and direntries data structures to make the filesystem.",
       technologies: ["Operating Systems"],
       links: [],
       image: "/FS.png",
+      video: ""
     },
     {
       title: "Forensics Project",
       href: "",
       active: true,
+      dates: "",
       description:
         "We were given a disk drive to study—looked for persistent traces in memory (bash_history, logs, etc.), learned how to retrieve info from a disk image without booting the OS, used password crackers and steganography to recover info in random images, browsed the dark web and decrypting forums, deployed SQL injection attacks to gain access to fake websites, etc.",
       technologies: ["Cybersecurity", "Forensics"],
       links: [],
       image: "/foreign.jpg",
+      video: ""
     },
     {
       title: "MD5 Length Extension and Padding Oracle Attacks",
       href: "",
       active: true,
+      dates: "",
       description:
         "Implemented a length extension attack on MD5 which allows an attacker to append to a message and compute its verifier, which will then be accepted as valid by the intended recipient. Also implemented a padding oracle attack on SHA256, which allows an attacker to decode an entire message by exploiting a vulnerability in returning both a padding and invalid MAC error.",
       technologies: ["Cybersecurity"],
       links: [],
       image: "/lock.png",
+      video: ""
     },
     {
       title: "Application Security Project",
       href: "",
       active: true,
+      dates: "",
       description:
         "An introduction to control-flow hijacking vulnerabilities in application software, including buffer overflows, integer overflows, no-op sleds, ROP Chain attacks, and more. A series of vulnerable programs was provided along with a virtual machine environment to develop exploits.",
       technologies: ["Cybersecurity"],
       links: [],
       image: "/appsec.jpeg",
+      video: ""
     },
     {
       title: "SQL Injection, XSS, and CSRF Attacks",
       href: "",
       active: true,
+      dates: "",
       description:
         "Implemented various SQL injection attacks on a mock server, logging in as a user without their password by taking advantage of unsanitized inputs to insert malicious SQL code. Also devised cross-site scripting attacks to steal a fake user's browsing info with JavaScript as well as cross-site forgery attacks.",
       technologies: ["Cybersecurity"],
       links: [],
       image: "/xss.webp",
+      video: ""
     },
     {
       title: "Virtual Memory Pager",
       href: "",
       active: true,
+      dates: "",
       description:
         "Created a virtual memory pager to provide the abstraction of separate, protected address spaces for multiple processes. Our implementation supported shared, file-backed pages as well as swap-backed pages that are specific to a process. For physical memory eviction and page replacement, we used the clock algorithm as an approximation for LRU.",
       technologies: ["Operating Systems"],
       links: [],
       image: "/vm.png",
+      video: ""
     },
     {
       title: "C++ Threading Library",
       href: "",
       active: true,
+      dates: "",
       description:
         "Programmed a C++ threading library that supports join, yield, mutexes, condition variables, and multithreaded program execution on multicore processors. This library makes use of inter-processor interrupts and timer interrupts as well as guards to ensure the OS can swap threads during user function execution and ensure kernel-level atomicity across CPUs.",
       technologies: ["Operating Systems"],
       links: [],
       image: "/threads.png",
+      video: ""
     },
     {
       title: "Multithreaded Disk Scheduling",
       href: "",
       active: true,
+      dates: "",
       description:
         "Created a multithreaded disk scheduler with multiple synchronous requester threads and one servicer thread which handles disk requests with Shortest Seek Time First processing. This means the tracks closest to the current track in the servicer will be selected among the available tracks in the disk data structure.",
       technologies: ["Operating Systems"],
       links: [],
       image: "/Disk.jpeg",
+      video: ""
     },
     {
       title: "Instagram Clone",
       href: "https://github.com/asafdari-boop/Instagram-Clone",
       active: true,
+      dates: "",
       description:
         "Remade Instagram using a combination of static pages, server-side dynamics, and client-side dynamics. Used Flask to handle routing and API requests, Jinja to render templates, and React to handle client-side processes.",
       technologies: ["Flask", "React", "Jinja"],
       links: [
       ],
       image: "/insta.png",
+      video: ""
     },
     {
       title: "MapReduce",
       href: "https://github.com/asafdari-boop/MapReduce",
       active: true,
+      dates: "",
       description:
         "Built a MapReduce framework like Hadoop for processing jobs using workers and managers using the Python threads library.",
       technologies: ["Python", "Threads"],
       links: [
       ],
       image: "/mapreduce.jpeg",
+      video: ""
     },
     {
       title: "Search Engine",
       href: "",
       active: true,
+      dates: "",
       description:
         "Built an end-to-end search engine similar to Google circa 2008 using tf-idf and PageRank. The inverted index of web pages is wrapped in index servers segmented by document with a front end that returns ranked search results.",
       technologies: ["Web Systems", "Full Stack"],
       links: [],
       image: "/google.png",
+      video: ""
     },
     {
       title: "Introduction to AI Projects",
       href: "",
       active: true,
+      dates: "",
       description:
         "Built tree search algorithms like Breadth First Search and A* search. Implemented a Sudoku solver using Arc Consistency 3 and backtracking. Coded rejection sampling, likelihood weighting, and Gibbs sampling for approximate inference. Also implemented a decision tree learning program.",
       technologies: ["AI/ML", "Algorithms"],
       links: [],
       image: "/ai.jpeg",
+      video: ""
     },
     {
       title: "Intro to Machine Learning Projects",
       href: "",
       active: true,
+      dates: "",
       description:
         "Created a sentiment classifier using SVM with different kernels (linear, quadratic, etc.) and logistic regression. Built a CNN to classify dog breeds using different model architectures with downsampling and dropout. Performed audio emotion classification using HMMs, GMMs, and Neural Nets and clustered data with K-means and hierarchical models. Also built an HMM to generate text in the style of Shakespeare with a parameter controlling whether it was bigram, trigram, etc.",
       technologies: ["AI/ML", "Algorithms"],
       links: [],
       image: "/ml.jpeg",
+      video: ""
     },
     {
       title: "SillyQL",
       href: "",
       active: true,
+      dates: "",
       description:
         "Wrote a program to emulate a basic relational database with an interface based on a subset of a standard query language in C++. This was accomplished using unordered maps, hash tables, functors, and comparators.",
       technologies: ["Algorithms", "Databases"],
       links: [],
       image: "/sql2.png",
+      video: ""
     },
   ],
   hackathons: [
@@ -432,6 +472,7 @@ export const DATA = {
         "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
       image: "/hack-western.png",
       links: [],
+      video: ""
     },
     {
       title: "Hack The North",
@@ -440,6 +481,7 @@ export const DATA = {
         "Developed a mobile application which delivers university campus-wide events in real-time to all students.",
       image: "/hack-the-north.png",
       links: [],
+      video: ""
     },
     {
       title: "FirstNet Public Safety Hackathon",
@@ -448,6 +490,7 @@ export const DATA = {
         "Developed a mobile application which communicates a victim's medical data from inside an ambulance to doctors at the hospital.",
       image: "/firstnet.png",
       links: [],
+      video: ""
     },
     {
       title: "DeveloperWeek Hackathon",
@@ -462,6 +505,7 @@ export const DATA = {
           href: "https://github.com/cryptotrends/cryptotrends",
         },
       ],
+      video: ""
     },
     ],
     research: [
