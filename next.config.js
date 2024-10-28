@@ -5,5 +5,4 @@ module.exports = {
   assetPrefix: isGithubPages ? `/${repo}/` : '',
   basePath: isGithubPages ? `/${repo}` : '',
   trailingSlash: true,
-  output: 'export'
 };
