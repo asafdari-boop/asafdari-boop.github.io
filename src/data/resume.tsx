@@ -187,6 +187,42 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Billionairesmanual.com",
+      href: "https://billionairesmanual.com/",
+      active: true,
+      dates: "",
+      description:
+        "A compendium of every billionaire on the Forbes list with their history and lessons learned. I used an AI agent to research each one of them and summarize their story. I also made a matchmaking feature where you can get paired to a billionaire that embodies your goals.",
+      technologies: ["React", "AI Agents (Crew AI)", "Julius AI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://billionairesmanual.com/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/billys.png",
+      video: ""
+    },
+    {
+      title: "Vango.art",
+      href: "https://www.vango.art/",
+      active: true,
+      dates: "",
+      description:
+        "I made an AI image generation service using the new flux models. It personalizes all image generations using the images you upload as a template. It's super fun to use, give it a try if you haven't made AI images of yourself yet!",
+      technologies: ["React", "Flux AI", "Stripe"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.vango.art/",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/vango.png",
+      video: ""
+    },
+    {
       title: "Speakupforpalestine.com",
       href: "https://speakupforpalestine.com",
       active: true,

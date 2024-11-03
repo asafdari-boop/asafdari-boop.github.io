@@ -6,5 +6,8 @@ module.exports = {
   basePath: isGithubPages ? `/${repo}` : '',
   trailingSlash: true,
   distDir: 'out',
-  output: 'export'
+  output: 'export',
+  images: {
+    unoptimized: true, // Disable image optimization
+  },
 };
