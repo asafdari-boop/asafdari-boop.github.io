@@ -34,6 +34,7 @@ export const ResumeCard = ({
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
       e.preventDefault();
+      e.stopPropagation();
       setIsExpanded(!isExpanded);
     }
   };
@@ -47,11 +48,21 @@ export const ResumeCard = ({
       <Card className="flex">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
+            {href ? (
+              <a href={href} target="_blank" onClick={(e) => e.stopPropagation()}>
+                <AvatarImage
+                  src={logoUrl}
+                  alt={altText}
+                  className="object-contain"
+                />
+              </a>
+            ) : (
+              <AvatarImage
+                src={logoUrl}
+                alt={altText}
+                className="object-contain"
+              />
+            )}
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
@@ -82,35 +93,43 @@ export const ResumeCard = ({
               </h3>
               <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
-                {/* {href && (
-                  <Link href={href} target="_blank">
-                    <ExternalLinkIcon
-                      className={cn(
-                        "size-4 ml-2 group-hover:opacity-100"
-                      )}
-                    />
-                  </Link>
-                )} */}
               </div>
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
           {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
+            <>
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{
+                  opacity: isExpanded ? 1 : 0,
+                  height: isExpanded ? "auto" : 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="mt-2 text-xs sm:text-sm"
+              >
+                <span>
+                {description}
+                {href && href !== "" && (
+                  <Link
+                    href={href}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <ExternalLinkIcon
+                      className={cn(
+                        "inline size-4 ml-1 mb-1 group-hover:opacity-100"
+                      )}
+                    />
+                  </Link>
+                )}
+                </span>
+              </motion.div>
 
-                height: isExpanded ? "auto" : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
-            >
-              {description}
-            </motion.div>
+            </>
           )}
         </div>
       </Card>

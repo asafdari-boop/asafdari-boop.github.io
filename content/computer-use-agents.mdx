@@ -1,0 +1,89 @@
+---
+title: "Computer Use Agents Are Awesome"
+publishedAt: "2025-03-06"
+summary: "Research on all 2781 billionaires on the Forbes list."
+---
+
+Here's what I learned from a computer use meetup at F.inc!
+
+## The Big Picture
+
+Computer Use Agents represent a significant shift in how we think about AI automation. While APIs have traditionally been the go-to solution for automation, many applications don't have accessible APIs. The solution? Add vision capabilities to AI models so they can interact with interfaces directly through the screen.
+
+This is becoming a critical competitive advantage - once a few players adopt this technology, everyone else needs to follow suit or risk falling behind because they can do the same tasks without hiring people for pennies on the dollar.
+
+## Real-World Applications
+
+While it might sound futuristic, there are already some compelling use cases:
+
+- Healthcare and insurance processing
+- Business Process Outsourcing (BPO) - a $300 billion industry ripe for disruption
+- Automated shopping from recipe lists
+- Web automation at scale
+
+Interestingly, while web automation is well-explored, desktop and mobile applications remain relatively untouched frontiers.
+
+## Technical Building Blocks
+
+### Open Source Tools
+- Omni Parser
+- Browser Use
+- UI TARS (Screensit) - provides coordinates and click instructions
+
+### Models & Applications
+- Black Coffee
+- Pig.dev
+- OpenAI solutions
+- Anthropic implementations
+
+### Infrastructure
+- Browserbase (serverless infrastructure)
+- E2B code headless sandboxing
+
+## Different Technical Approaches
+
+1. **VLMs + Grounding**
+   - Similar to RAG (Retrieval Augmented Generation)
+   - Uses bounding boxes on screen for context
+   - Passes relevant visual information to the model
+
+2. **VLMs Trained on Task Completion**
+   - Trained specifically on screenshots
+   - Returns precise coordinates
+   - Used by companies like Operator and ByteDance
+
+3. **Reinforcement Learning + VLMs**
+   - Applies DeepSeek's approach to visual language models
+   - Currently showing promising results
+
+## Real-World Example: Rtrvr.ai
+
+An interesting case study is Rtrvr.ai, which:
+- Works with background tabs
+- Uses DOM-based approach
+- Merges API and web operations
+- Creates arbitrary functions (e.g., "upload this product to Shopify")
+- Achieves 4x speed improvements
+- Currently serves 500+ users in production
+
+However, they've found that vision-based approaches can increase hallucination rates.
+
+## Challenges and Considerations
+
+- Some platforms block automated operators
+- Need for robust task saving mechanisms
+- Cloud endpoint management (solutions like Catpatch)
+- Vision OCR challenges (though Mistral OCR shows promise)
+- Grok's integrated approach
+
+## The Future
+
+The most exciting developments are happening in:
+- DeepSeek training and fine-tuning
+- Applying reinforcement learning to VLMs
+- Integration with existing business processes
+
+This field is moving incredibly fast, and it's fascinating to see how different approaches are evolving to solve the challenge of computer interaction automation.
+
+Building an agent that can control your computer and take actions will unlock a lot of business + consumer value. I think it's time to build.
+

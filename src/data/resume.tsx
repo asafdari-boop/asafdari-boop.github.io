@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon, FileIcon, DownloadIcon } from "lucide-react";
 export const DATA = {
   name: "Ammar Safdari",
   initials: "AS",
-  url: "https://ammar.io",
+  url: "https://asafdari-boop.github.io/",
   location: "Ann Arbor, MI",
   locationLink: "https://www.google.com/maps/place/Ann+Arbor,+MI",
   description:
@@ -83,16 +83,40 @@ export const DATA = {
 
   work: [
     {
+      company: "Skyfire",
+      href: "https://skyfire.xyz",
+      badges: [],
+      location: "Remote",
+      title: "AI Solutions Engineer",
+      logoUrl: "/skyfire.png",
+      start: "2025",
+      end: "Present",
+      description:
+        "Forward-deployed AI engineer partnering directly with Skyfire customers to integrate and extend our agentic-payments protocol. I work across the stack — from building out our MCP server, to working on our buyer/seller transaction platform, to creating agentic demos using our platform to showcase agentic payments / checkout / access, to building out integrations with other agent protocols like AP2/A2A/others, and also making internal agents for testing and monitoring the Skyfire platform, and onboarding workflows that accelerate adoption across real-world autonomous-agent use cases.",
+    },
+    {
+      company: "Consumer Reports",
+      href: "https://www.consumerreports.org/askcr",
+      badges: [],
+      location: "Remote",
+      title: "AI Engineering Consultant",
+      logoUrl: "/cr.png",
+      start: "2024",
+      end: "2025",
+      description:
+        "I architected and implemented a \"Best of the Web\" agentic AI research feature as well as a way to use licensed datasets for AskCR, Consumer Reports' flagship AI shopping assistant. This enables CR to give it's opinion outside of products they have tested in their labs, solving a critical shortcoming of their platform. Now, I'm implementing a free taster experience with options to upgrade to be a full member. I work closely with CR's product and engineering teams on AskCR and have co-presented AskCR product milestones and future vision with the VP of Innovation to CR's C-suite executives and Board of Directors in New York.",
+    },
+    {
       company: "Claros",
       href: "https://claros.so/",
       badges: [],
-      location: "Remote",
+      location: "San Francisco, CA",
       title: "Co-Founder & CEO",
       logoUrl: "/logo-circle.png",
       start: "2023",
-      end: "Present",
+      end: "2024",
       description:
-        "Working on Claros, an AI personal shopping assistant. Claros aims to replicate the level of personalized service found in brick-and-mortar stores digitally, leveraging the power of Large Language Models (LLMs) to provide scalable, on-demand shopping assistance. Claros also performs research online before recommending products, replicating the due diligence process a customer goes through before clicking buy. Think better Rufus.",
+        "I'm working on Claros, an AI personal shopping assistant. Claros aims to replicate the level of personalized service found in brick-and-mortar stores digitally. It leverages the power of Large Language Models (LLMs) to provide scalable, on-demand shopping assistance. Claros also performs research online before recommending products, replicating the due diligence process a customer goes through before clicking buy. I will be adding a Deep Research mode to give you 'expert-level' shopping advice.",
     },
     {
       company: "Newsletter Writer",
@@ -116,11 +140,11 @@ export const DATA = {
       start: "2022",
       end: "2022",
       description:
-        "Worked as a software intern at Vianai, receiving mentorship from the head of prototyping, Kevin Dunnel. Built sophisticated models with decision trees, Support Vector Machines, Recurrent Neural Nets, Convolutional Neural Nets, and Generative Adversarial Networks. Developed a song recommendation backend service for an online marketplace connecting producers and artists. Worked on platform dev for Vianai's MLOPS platform, building webapps with React, backend classes in our AI library, SQL transformers for data preprocessing, and investigating/evaluating emerging techniques in the field of AI for potential integration into our suite of services.",
+        "I worked as a software intern at Vianai with my mentor, the head of prototyping, Kevin Dunnel. During their ML bootcamp, I built sophisticated models with decision trees, Support Vector Machines, Recurrent Neural Nets, Convolutional Neural Nets, and Generative Adversarial Networks. For one of my projects, I developed a song recommendation backend service for an online marketplace connecting producers and artists. I also worked on developing Vianai's proprietary MLOPS platform, which enabled enterprises to architect, train, monitor, and optimize their models all under one roof. During that time, I built webapps with React, backend classes in our AI library, SQL transformers for data preprocessing, and investigatted/evaluated emerging techniques in the field of AI for potential integration into our suite of services.",
     },
     {
       company: "Mach",
-      href: "http://machtours.com/",
+      href: "",
       badges: [],
       location: "Remote",
       title: "COO and Co-Founder",
@@ -128,11 +152,11 @@ export const DATA = {
       start: "2021",
       end: "2023",
       description:
-        "I co-founded Mach with two other friends, Samuel You and Nolan Kuza, two other students at UM. Mach is a new platform for exploring and having fun with friends, while also helping small businesses which are featured prominently on our platform recoup lost revenue from COVID. Mach also serves as an altogether better form of social media, with an emphasis on translating virtual interactions into physical and in-person enjoyable experiences. ",
+        "I co-founded Mach with two other friends, Samuel You and Nolan Kuza, two other students at UM. Mach is a mobile app for exploring and having fun with friends, while also helping small businesses which are featured prominently on our platform recoup lost revenue from COVID. Mach also serves as an altogether better form of social media, with an emphasis on translating virtual interactions into physical and in-person enjoyable experiences. Think post-COVID meetups.com for young people. ",
     },
     {
       company: "Lookout",
-      href: "https://lookout.finance",
+      href: "",
       badges: [],
       location: "Remote",
       title: "Front End Developer",
@@ -140,11 +164,11 @@ export const DATA = {
       start: "2021",
       end: "2022",
       description:
-        "Worked as a front end developer for Lookout, a service that transforms the way people manage their personal finances through an easy-to-use and beautiful interface that automatically tracks your income, expenses, and net worth at any given time across different bank accounts and asset classes. Created reusable components and developed the sign-in/sign-up flow and the MyAccounts and MyCash pages using React, CSS, and HTML.",
+        "I worked as a front end developer for Lookout, a service that transforms the way people manage their personal finances through an easy-to-use and beautiful interface that automatically tracks your income, expenses, and net worth at any given time across different bank accounts and asset classes. Created reusable components and developed the sign-in/sign-up flow and the MyAccounts and MyCash pages using React, CSS, and HTML.",
     },
     {
       company: "Sandia National Labs",
-      href: "https://www.sandia.gov/",
+      href: "https://www.batteryarchive.org/",
       badges: [],
       location: "Remote",
       title: "Software Developer",
@@ -152,7 +176,7 @@ export const DATA = {
       start: "2021",
       end: "2022",
       description:
-        "Worked on the BatteryArchive initiative, an online repository for standardized battery data. Gained experience using front end and backend frameworks as well as containerization techniques (React.js, Node.js, PostgreSQL, and Docker). Developed data upload and download scripts using Google Cloud APIs. Created services using Cron or systemctl that run on Google Cloud virtual machines to automatically deal with incoming datasets. Created scripts to parse different data formats into a common schema that is digestible by our database.",
+        "I worked on the BatteryArchive initiative, an open-source online repository for standardized battery data. There, I gained experience using front end and backend frameworks as well as containerization techniques (React.js, Node.js, PostgreSQL, and Docker). I developed data upload and download scripts using Google Cloud APIs and created services using Cron or systemctl that run on Google Cloud virtual machines to automatically deal with incoming datasets. I also wrote scripts to parse different data formats into a common schema that is digestible by our database.",
     },
     {
       company: "Done Waiting",
@@ -164,7 +188,7 @@ export const DATA = {
       start: "2020",
       end: "2021",
       description:
-        "Created and managed the website donewaiting.org using Wix. Developed a custom phonebanking software system using Flask, React, and Google Firebase to support progressive candidates.",
+        "I created and managed the website donewaiting.org using Wix for a congressional candidate in Michigan named Solomon Rajput. I then developed a custom phonebanking software system using Flask, React, and Google Firebase to help support progressive candidates.",
     }
   ],
   education: [
@@ -266,6 +290,22 @@ export const DATA = {
         },
       ],
       image: "/forta.png",
+      video: ""
+    },
+    {
+      title: "Shopping Chrome extension",
+      href: "https://chromewebstore.google.com/detail/claros-shopping-assistant/nbmffmnaecncglmeofodagbafilnokcj?hl=en",
+      active: true,
+      dates: "",
+      description:
+        "Created a Chrome extension to automatically run products from webpages users are looking at against a backend to find those same items at a discount. Then starts to summarize consumer sentiment on popular websites like Reddit and youtube.",
+      technologies: ["Bs4", "Google Chrome"],
+      links: [{
+        type: "Extension",
+        href: "https://chromewebstore.google.com/detail/claros-shopping-assistant/nbmffmnaecncglmeofodagbafilnokcj?hl=en",
+        icon: <Icons.nextjs className="size-3" />,
+      },],
+      image: "/extension.png",
       video: ""
     },
     {
@@ -502,46 +542,64 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "Hack Western 5",
-      location: "London, Ontario",
+      title: "Stanford LLM Law Hackathon — Bloomberg Prize + Scorecard AI Prize",
+      dates: "2024",
+      location: "Stanford University, Palo Alto, CA",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image: "/hack-western.png",
-      links: [],
-      video: ""
-    },
-    {
-      title: "Hack The North",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus-wide events in real-time to all students.",
-      image: "/hack-the-north.png",
-      links: [],
-      video: ""
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communicates a victim's medical data from inside an ambulance to doctors at the hospital.",
-      image: "/firstnet.png",
-      links: [],
-      video: ""
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image: "/developer-week.jpg",
+        "Built a brief case manager that automatically matches arguments between litigator and defendant using LLMs — a manual, but extremely important process that could take hours to days for both sides. For our effors, got the Bloomberg Prize and the Scorecard AI Prize.",
+      image: "/stanford.png",
       links: [
         {
           title: "GitHub",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://github.com/asafdari-boop/arbpro",
+        },
+        {
+          title: "LinkedIn",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.linkedin.com/posts/jaymandal_llm-ai-hackathon-activity-7066122415273103360-K-Vw/",
         },
       ],
-      video: ""
+    },
+    {
+      title: "AWS AI Agents Hackathon",
+      dates: "2024",
+      location: "AWS Loft SF",
+      description:
+        "Built AgentSafe, a secure MCP client for AI agents. The goal was to give agents a safer surface for interacting with tools and external services. The MCP client would audit the company behdind the tools using Vanta, perfrom static code analysis using Semgrep if the code is public, and run through other MCP connection safety checks before establishing a connection. It would be great to add a layer that could sit in between tool call completions, resouces reads, ect. and prevent prompt injections.",
+      image: "/awsecs.png",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/asafdari-boop/AWS-AI-Agents-Hackathon",
+        },
+        {
+          title: "AWS Event",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://aws.amazon.com/startups/events/aws-ai-agents-hackathon",
+        },
+      ],
+    },
+    {
+      title: "EECS Showcase — Grand Prize Winner",
+      dates: "2020",
+      location: "University of Michigan, Ann Arbor, MI",
+      description:
+        "Programmed a fully functional multiplayer Space Invaders game on custom LED boards using Arduino. Won the Grand Prize at the EECS Showcase. Very fun, but also very tiring.",
+      image: "/umich.png",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/Polishdudealan/SpaceInvaders",
+        },
+        {
+          title: "Demo Video",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=hnEeR7Wohws",
+        },
+      ],
     },
     ],
     research: [
@@ -580,14 +638,20 @@ export const DATA = {
         location: "University of Michigan",
         dates: "2020-2021",
         description:
-          "Investigated various lithium ion battery configurations and modifications with COMSOL/MATLAB Simulink to automate data extraction, analysis, and visualization. Examined graphite, hard carbon hybrid anode batteries to determine the effect of certain battery parameters on performance measures. Helped publish a paper called: [Enabling 6C fast charging of Li‐ion batteries with graphite/hard carbon hybrid anodes]",
+          "Investigated various lithium ion battery configurations and modifications with COMSOL/MATLAB Simulink to automate data extraction, analysis, and visualization. Examined graphite, hard carbon hybrid anode batteries to determine the effect of certain battery parameters on performance measures. Helped two publish papers called: [Enabling 6C fast charging of Li‐ion batteries with graphite/hard carbon hybrid anodes] and [The origin of the superior fast-charging performance of hybrid graphite/hard carbon anodes for Li-ion batteries]",
         image: "/thornton-research.png",
         links: [
           {
-            title: "Research Paper",
+            title: "Enabling 6C fast charging of Li‐ion batteries",
             icon: <FileIcon className="h-4 w-4" />,
             href: "https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202003336",
           },
+          {
+            title: "The origin of the superior fast-charging performance of hybrid graphite carbon anodes",
+            icon: <FileIcon className="h-4 w-4" />,
+            href: "https://www.sciencedirect.com/science/article/pii/S2405829725000546",
+          },
+
         ],
       },
       {

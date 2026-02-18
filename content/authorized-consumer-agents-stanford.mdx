@@ -1,0 +1,137 @@
+---
+title: "Consumer-Authorized AI Agents"
+publishedAt: "2025-02-26"
+summary: "Stanford HAI working group on AI agents"
+---
+
+The takeaway was we need to figure out AI agent authentication, authorization, delegation, and a lot of other words that end in ion for agents.
+
+More helpfully, here's some of what was mentioned though:
+
+# 1. Context and Motivation
+
+## Why AI Agent Authorization Matters
+- Rise of multi-agent interactions: AI agents increasingly perform tasks on behalf of humans (e.g., shopping, scheduling, or data retrieval)
+- Scaling risk: Agents can execute actions at a massive scale, so security and trust become critical
+- Friction vs. control: We want seamless interactions while ensuring the user remains in control of what each agent can do
+
+## Key Problems and Questions
+- Credential handling: Safely sharing authentication tokens (e.g., cookies, OAuth) with agents
+- Permissioning: Defining exactly which tasks agents are allowed or not allowed to perform
+- Chain-of-delegation: Ensuring accountability when tasks (and credentials) are passed among multiple agents
+
+# 2. Core Concepts and Challenges
+
+## 2.1 Authentication and Authorization
+- Agent identity: Determining which "user" or "owner" an agent represents
+- Scoping: Granular permissions, so an agent can only do what a user explicitly allows
+- Revocation: Quick ways to cancel or change agent access
+
+## 2.2 Delegation and Trust
+- Agent ↔ Agent interactions: Delegation can magnify complexity if credentials are passed incorrectly
+- Human ↔ Agent interactions: The user's preferences and instructions must be respected
+- Agent ↔ API interactions: How services detect, block, or accommodate agent traffic
+
+## 2.3 Potential Harms and Abuse
+- Automated scale: Creating 1,000 accounts to bypass rate limits or do large-scale scraping
+- Over-access: An agent that obtains more privileges than intended (e.g., unlimited spending)
+- User confusion: Complex credential or multi-factor flows can create friction and misconfiguration
+
+# 3. Strategic Framework
+First we went over a possible implementation by Tobin of Authenticated Delegation. Basically, it extends existing authentication standards to handle AI agents:
+
+## 3. Technical Framework (Authenticated Delegation)
+
+## 3.0.1 Extending OAuth 2.0 / OpenID Connect
+- User's ID-Token: Identifies the human user
+- Agent-ID Token: Identifies the AI system (capabilities, limitations)
+- Delegation Token: Grants the AI agent scoped authority on the user's behalf (spending limits, resource permissions, etc.)
+- Services verify these tokens via a trusted identity provider or using W3C Verifiable Credentials
+
+## 3.0.2 Scoping and Permissions
+- Resource-Based Scopes: Precisely define what files, APIs, or data an agent can access
+- Task-Based or Natural Language Scopes: Higher-level instructions that must eventually map onto machine-readable rules
+- Audit & Revocation: Logs to track agent actions; users or platforms can revoke tokens when misuse is detected
+
+## 3.0.3 Alternative Approaches
+- W3C Verifiable Credentials: More privacy-friendly, can avoid constant reliance on large identity providers
+- User-Managed Access (UMA): Centralizes policy management so users can set or adjust agent permissions in one place
+
+## 3.1 Layers of Authorization
+1. Session Layer
+   - Similar to short-lived cookies or tokens that expire or can be invalidated promptly
+2. Persistent Identity Layer
+   - Longer-lived tokens (OAuth style) with an audit log
+3. Delegation Layer
+   - The user sets the scope: e.g., "Buy up to $50 in groceries," "Read messages but not send"
+
+## 3.2 Verification and Governance
+- KYC for Agents: Sites may want to know which human or entity controls a given agent
+- Consent and Alignment: Agents should reflect user intent and preferences rather than hidden agendas
+- Revocability: A user can quickly see all their agents and disable access if needed
+
+## 3.3 Interoperability vs. Blocking
+- Agent-friendly APIs: Some services provide tailored endpoints or "agent modes"
+- Agent-blocking: Others may detect and prohibit "bot" behavior if it undermines site rules
+- Negotiation: Over time, standards may emerge for "trusted" agent tokens
+
+# 4. Concrete Example: Budget.com
+
+Suppose Budget.com is an e-commerce platform focusing on low-cost goods or discount deals. Here's how it could play nicely with AI agents while still protecting user data and site integrity:
+
+## Agent Registration
+- Agent Identity: Budget.com implements an "Agent Registration Portal." Whenever an agent wants to automate user tasks (e.g., shopping for deals), it must present some identifying info (e.g., "I'm an agent for user JaneDoe")
+- User Confirmation: The user receives a notification from Budget.com: "Is this your authorized agent? If so, grant it access"
+
+## Granular OAuth-Like Scopes
+- Basic Scopes: Read-only product listings, view discounted deals, or retrieve a user's wish list
+- Transaction Scopes: Purchasing privileges limited to a daily or weekly spending cap (e.g., "Agent can spend up to $50 per week")
+- Shipping and Billing: Agents can be disallowed from modifying the shipping address or saving a new credit card unless explicitly granted
+
+## Agent-Friendly Endpoints
+- API for Agents: Budget.com could offer a simplified JSON-based API for searching products, applying coupons, and checking out. This API can handle hundreds of quick queries without triggering typical bot-detection systems
+- No "Friction" for Agents: Because the agent is registered and known, Budget.com can skip certain captchas or speed bumps used to thwart unknown bots
+
+## Rate Limiting & Monitoring
+- Transaction Frequency Limits: If an agent suddenly tries thousands of transactions, Budget.com flags it
+- Behavior Monitoring: If the agent's pattern shifts suspiciously—e.g., scraping or bulk-reselling items—Budget.com can suspend that agent's access or require re-verification
+
+## User Dashboard
+- Agent Control Panel: Budget.com provides a user dashboard listing all agents authorized to shop on their behalf, showing each agent's last purchases, total spending, and active scopes
+- Instant Revocation: A single click lets the user suspend or remove an agent if it misbehaves or is no longer needed
+
+## Liability and Refunds
+- Clear Policy: Budget.com clarifies that any purchases made by the authorized agent are the user's responsibility unless it clearly violates site policy (e.g., an agent exploiting a bug)
+- Refund Mechanisms: Streamlined refunds if the agent over-purchases or picks the wrong items
+
+By implementing these measures, Budget.com:
+- Increases trust with users who want to automate shopping tasks
+- Protects itself from unknown bots that might scrape data, spam the platform, or drive up costs
+- Offers a consistent user experience by letting AI agents handle the mundane steps (like searching for the best deals or filling out checkout forms) while giving humans final oversight
+
+# 5. Proposed Approaches and Recommendations
+
+## Granular OAuth Scopes for Agents
+- Extend existing OAuth approaches so they fit specialized agent tasks (e.g., read-only wish lists, limited spending)
+- Maintain audit logs to track agent activity
+
+## Agent Identity Registry
+- A centralized place or service where platforms like Budget.com can confirm that a given agent truly represents a specific user
+- Could integrate trust scores or verified endorsements (e.g., agent is "legit" per industry standards)
+
+## Tiered Permissions and Rate Limits
+- Limit new or untested agents to small actions
+- Gradually scale privileges if usage stays within normal bounds
+
+## User-Centric Control Dashboards
+- Provide a one-stop location for each user to manage all authorized agents, set or modify scopes, and revoke access if the agent overreaches
+
+## Standardized Site Responses to Agents
+- Sites can either cooperate (offering dedicated agent APIs and streamlined flows) or block suspicious or unregistered agents
+
+# 6. Conclusion
+
+In a future dominated by AI-driven automation, platforms like Budget.com can "play nice" with authorized agents by:
+- Implementing agent registration with clear identity and permission scoping
+- Offering agent-friendly APIs that deliver content in an efficient, frictionless manner while still monitoring usage
+- Providing a robust user dashboard for oversight, quick revocation, and clear transaction logs
