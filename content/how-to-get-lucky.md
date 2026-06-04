@@ -16,7 +16,7 @@ There's a formula for it.
 
 Felix Felicis, not as a potion, but as something you can write down on a sheet of paper.
 
-Luck is real. It is also quite uneven and unfair. Some people are born into better families, better cities, better networks, better eras, and better initial conditions. Some parts, are literally out of your control. But pretending like luck does not exist is a disservice to yourself and pretending there's nothing you can do to increase your luck is a disservice on top of that disservice.
+Luck is real. It is also quite uneven and unfair. Some people are born into better families, better cities, better networks, better eras, and better initial conditions. Some parts, are literally out of your control. But pretending like luck does not exist is a disservice to yourself and pretending there's nothing you can do to increase your chances at luck is a disservice on top of that disservice.
 
 Beyond your initial conditions, luck is also not captured evenly. Two people can walk into the same room, meet the same person, live through the same technology shift, or stumble across the same idea. One of those people walks right past their lucky break. The other manages to turns their luck into a company, a career, a relationship, or a new life.
 
@@ -30,7 +30,7 @@ And there is a formula for that.
 Luck Captured = c * Luck Surface Area * Agency
 ```
 
-That is the whole essay in a line. You could unpack each of these terms yourself and you've have a formula you can follow for increasing your luck. In fact, I'd highly encourage it and I'd love to hear what you arrive at.
+That is the whole essay in a line. You could unpack each of these terms yourself and you've have personalized ways for increasing your own luck. In fact, I'd highly encourage it and I'd love to hear what you arrive at.
 
 I'll proceed with breaking this down into my own terms from my own understanding of the world. Expressing the above formula in plain English, your luck captured is a function of how many lucky collisions you have, multiplied by your ability to act when one of those collisions happens.
 
@@ -189,13 +189,13 @@ Increase your agency.
 
 And you will get luckier.
 
-You cannot force luck to manifest, but you can live in a way that makes luck more likely to find you. And you can become the kind of person who does something with it when it does.
+You cannot force luck to manifest whenever you want, but you can live in a way that makes luck more likely to find you. And you can become the kind of person who does something with it when it does.
 
-That, my friends, is how to get lucky (not like that, but also like that 😉).
+And that, my friends, is how to get lucky (not like that, but also like that 😉).
 
 ## Afternote
 
-The physics major in me wanted to actually derive a more complicated formula that calculated luck captured as a flux integral -- which captures the net flow through a given area. This would have given me something with units of Luck Captures per unit time though so there would have to be a second integral over the duration of your life?
+The physics major in me wanted to actually derive a more complicated formula that calculated luck captured as a flux integral -- which captures the net flow through a given area (luck through your surface area). This would have given me something with units of luck per unit time though, so there would have to be a second integral over the duration of your life?
 
-IDK I'll try it out and see what happens at some point.
+Anyway I'll try it out and see what happens at some point. I would expect it to have a lot of the same terms as the realtionship I've described above.
 
