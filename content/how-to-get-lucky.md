@@ -14,15 +14,13 @@ So too can you.
 
 There's a formula for it.
 
-Felix Felicis, not as a potion, but as something you can write down on a sheet of paper.
+The real life Felix Felicis, not as a potion from Harry Potter, but as something you can write down on a sheet of paper.
 
 Luck is real. It is also quite uneven and unfair. Some people are born into better families, better cities, better networks, better eras, and better initial conditions. Some parts are literally out of your control. But pretending like luck does not exist is a disservice to yourself, and pretending there's nothing you can do to increase your chances at luck is a disservice on top of that disservice.
 
-Beyond your initial conditions, luck is also not captured evenly. Two people can walk into the same room, meet the same person, live through the same technology shift, or stumble across the same idea. One of those people walks right past their lucky break. The other manages to turn their luck into a company, a career, a relationship, or a new life.
+Beyond your initial conditions, luck is also not captured evenly. Two people can walk into the same room, meet the same person, live through the same technology shift, or stumble across the same idea. One of those people strolls right on past their lucky break. The other manages to turn their luck into a company, a career, a relationship, or a new life.
 
-The difference is not whether luck was present.
-
-The difference is whether they were able to capture it.
+The difference is not whether luck was present. It was there for both of them. The difference is whether they were able to capture it.
 
 And there is a formula for that.
 
@@ -34,15 +32,17 @@ That is the whole essay in a line. You could unpack each of these terms yourself
 
 I'll proceed with breaking this down into my own terms from my own understanding of the world. Expressing the above formula in plain English, your luck captured is a function of how many lucky collisions you have, multiplied by your ability to act when one of those collisions happens.
 
-Luck surface area is primarily an external property:
+The number of lucky collisions and hence your luck surface area is primarily an external property:
 
 ```text
-# Lucky collisions = c * Luck Surface Area = k * ( Right Time + Right Place + Right People + Right Idea + ...) =
+# Lucky collisions = c * Luck Surface Area
+
+ Luck Surface Area = Reach * ( Right Time + Right Place + Right People + Right Idea + ...) =
 ```
 
-Your number of lucky collisions can be defined as some constant times your luck surface area. I have no clue what this constant is at the moment to be completely honest with you, but I do have more clues about the other terms.
+Your number of lucky collisions can be defined as some constant times your luck surface area. I have no clue what this constant is at the moment to be completely honest with you, but I can explain the rest of it.
 
-Your luck surface area can be expressed as the sum of everything that has gone right in the world to make your lucky collision occur times another constant of proportionality. This constant of proportionality is a quantity representing your presence in the world as measured by all you have created for the world to see (aka the shit you be shipping).
+Your luck surface area, in turn, can be expressed as the sum of everything that has gone right in the world to make your lucky collision occur times another constant of proportionality. This one I do have a name for and it is a quantity representing your presence in the world as measured by all you have created for the world to see (aka the shit you be shipping). Let's denote this quantity your Reach. Your reach, defintiely acts as a multiplier on the number of ways for luck to find you, hence we multiply it with our luck surface area.
 
 The other four terms above in the summation are the primary terms that help to generate lucky encounters, but there are many, many more.
 
@@ -61,13 +61,13 @@ Agency = Courage * Preparedness
 Put together:
 
 ```text
-Luck Captured =
+Luck Captured = c * Agency * Luck Surface Area =
   c * (Courage * Preparedness)
   *
-  k * (Right Time + Right Place + Right People + Right Idea + ... + )
+  Reach * (Right Time + Right Place + Right People + Right Idea + ... + )
 ```
 
-Boom. My expanded master formula for luck. But there are some nuances to walk & talk through.
+Boom. My expanded master formula for getting lucky. But there are some nuances to walk & talk through.
 
 ## Luck Encountered vs Luck Captured
 
@@ -75,19 +75,19 @@ Most people talk about luck as if it is binary.
 
 You either got lucky or you did not.
 
-But that misses an important distinction. I like to think of it as luck encountered vs luck captured.
+But that misses an important distinction. It is better to think of it as luck encountered vs luck captured.
 
-Luck encountered is what crosses your luck surface area. Luck captured is what you manage to turn into something. Even someone who wins the lottery still has to claim their winnings -- without that action their luck was never captured / realized.
+Luck encountered is what crosses your luck surface area. Luck captured is what you manage to turn into something useful. Even someone who get the winning lottery ticket still has to claim their winnings -- without that one action their luck was never captured / realized.
 
-For the startup people, you can meet the right investor and not be prepared to pitch your startup-- netting you out nothing. The examples go on.
+For the startup people, you can meet the right investor and not be prepared to pitch your startup-- netting you out nothing. The examples go on of times you can encounter luck, but capture none of it.
 
-Your ability to then scale the lucky breaks from your luck surface area into luck captured is proportional to your agency. It's how you go from luck encountered to luck captured.
+Your ability to then scale the luck encountered from your luck surface area into luck captured is proportional to your agency.
 
-Now, let's take a look at that luck surface area of yours and see what makes it tick.
+Now then, let's take a look at that luck surface area of yours and then your agency and see what makes it tick.
 
 ## Luck Surface Area
 
-Luck surface area is how often your life comes into contact with luck. The larger your surface area, the more often luck can hit you, like the photons hitting a solar panel. You can either be the rinky dink one-off solar panel on top of a traffic meter, or you can be the solar array powering our space datacenters.
+Luck surface area is how often your life comes into contact with luck. The larger your surface area, the more often luck can hit you, like the photons hitting a solar panel. You can either be the rinky dink one-off solar panel on top of a traffic meter, or you can be the solar array powering our highly aniticipated space datacenters.
 
 Your luck surface area is composed of your presence in your world, denoted by k (encompassed by you and your work), times what I call "The Sum of Rights." The big four capital rights I've observed are:
 
@@ -113,7 +113,7 @@ And, when it became the right time for their craft to start garnering attention,
 
 ### Right Place
 
-A wise man, Uncle Shaan, once said "proximity is power". There's an underlying logic to why actors move to LA, finance bros to New York, and tech bros to SF.
+A wise man, (Uncle Shaan)[https://x.com/ShaanVP], once said "proximity is power". There's an underlying logic to why actors move to LA, finance bros to New York, and tech bros to SF.
 
 Where you are changes what you see, who you meet, and the opportunities you get access to. It is one of the biggest determinants to the number of lucky collisions you will have in your life.
 
@@ -141,7 +141,7 @@ The wrong idea can waste a lot of agency. You can work hard in the wrong directi
 
 So having the right idea partially requires you to have some taste, which is kind of like an ability to feel when a thought has potential in it.
 
-Also to have the right idea does not require immovable certainty in a specific idea. It means the direction is alive enough to deserve action. From there, you can iterate away.
+To have the right idea does not require immovable certainty in a specific idea. It means the direction is alive enough to deserve action. From there, you can iterate away.
 
 ## Agency
 
@@ -165,23 +165,17 @@ You need both to make things happen.
 
 Courage is your willingness to turn your thoughts into an action, even in the face of opposition. I think it effectively captures Bias to Action * Disagreeableness in one word. As an aside, that's disagreeableness as in being willing to push past the resistance of the world / others against your actions, not as in being rude.
 
-Courage scales the degree of luck you can capture. You can have the courage to bet big on bitcoin after taking the time to understand it and end up a billionaire versus the person who put a little money in and spent most of it on pizza.
-
-But the common thread is the same:
-
-You have to act.
-
-If you never take the swing, your luck is never captured.
+If you never take the swing, your luck is never captured. Courage is what keeps you stepping up to the plate and swinging.
 
 ### Preparedness
 
-I'd describe preparedness as the sum of what you know and how you are at the moment of a collision — knowledge plus your current state of being. I bring up your current state of being because it's critical to how you react to the lucky collision. If you are tired out of your mind, you are unlikely to make the most out of the luck you've been presented with, if you even make use of it at all.
+I'd describe preparedness as the sum of what you know and how you are at the moment of a collision — knowledge plus your current state of being. I bring up your current state of being because it's critical to how you react to the lucky collision. If you are tired out of your mind, you are unlikely to make the most out of the luck you've been presented with, if you even notice it at all.
 
-"In the fields of observation, chance favors only the prepared mind." or more commonly nowadays "luck favors the prepared mind." -  Louis Pasteur (aka milk man)
+"In the fields of observation, chance favors only the prepared mind." or more commonly nowadays "luck favors the prepared mind." -  Louis Pasteur (aka the milk man)
 
 ## Time to Go Get Lucky
 
-If you want to get luckier, at a high level there are two main levers to pull on.
+If you want to get luckier, at a high level there are two main, identifiable levers to pull on.
 
 Increase your luck surface area.
 
@@ -189,7 +183,7 @@ Increase your agency.
 
 And you will get luckier.
 
-You cannot force luck to manifest whenever you want, but you can live in a way that makes luck more likely to find you. And you can become the kind of person who does something with it when it does.
+You cannot force luck to manifest whenever you want, but you can live in a way that makes luck more and more likely to find you. And you can become the kind of person who does something with it when it does.
 
 And that, my friends, is how to get lucky (not like that, but also like that 😉).
 
