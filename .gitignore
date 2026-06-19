@@ -4,3 +4,6 @@ node_modules/*
 out/
 
 scratch/*
+
+.agent/dist/
+.agent/node_modules/
